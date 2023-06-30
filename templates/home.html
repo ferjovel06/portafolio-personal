@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% block content %}
+  <!-- HERO SECTION -->
+  <section class="home-hero" id="home">
+    <div class="px-4 py-5 mt-5 text-center">
+      <h1 class="display-5 my-5 fw-bold hero-title">
+        Hey, I'm &lt;<span>Fernanda Jovel</span>/&gt;
+      </h1>
+      <div class="col-lg-6 mx-auto my-5">
+        <p class="lead">
+          Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+        </p>
+        <a href="#" class="button my-5">Projects</a>
+      </div>
+    </div>
+    <aside class="sidebar">
+      <div class="sidebar-icons">
+        <a href="#" class="icon">
+          <img src="{{ url_for('static', filename='images/github_icon.png') }}"
+               alt="Github"
+               class="github-icon">
+        </a>
+        <a href="#" class="icon">
+          <img src="{{ url_for('static', filename='images/linkedin_icon.png') }}"
+               alt="Github"
+               class="github-icon">
+        </a>
+      </div>
+    </aside>
+  </section>
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about-section">
+    <div class="px-4 py-5 my-5 text-center">
+      <h3 class="display-5 my-5 fw-bold about-title">
+        About <span>Me</span>
+      </h3>
+      <img src="{{ url_for('static', filename='images/about_me.png') }}" alt="">
+      <div class="col-lg-6 mx-auto">
+        <p class="lead my-5">
+          Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+        </p>
+        <a href="#" class="button button-secondary">Contact</a>
+      </div>
+      <div class="skills-section py-5">
+        <h3 class="display-6 my-5 fw-bold about-title">Skills</h3>
+        <div class="icons-skills">
+          <img src="{{ url_for('static', filename='images/icons/html5.png') }}"
+               alt="html5"
+               class="skill-icon mx-2">
+          <img src="{{ url_for('static', filename='images/icons/css3.png') }}"
+               alt="css3"
+               class="skill-icon mx-2">
+          <img src="{{ url_for('static', filename='images/icons/javascript.png') }}"
+               alt="JavaScript"
+               class="skill-icon mx-2">
+          <img src="{{ url_for('static', filename='images/icons/git.png') }}"
+               alt="git"
+               class="skill-icon mx-2">
+          <img src="{{ url_for('static', filename='images/icons/java.png') }}"
+               alt="java"
+               class="skill-icon mx-2">
+          <img src="{{ url_for('static', filename='images/icons/spring.png') }}"
+               alt="spring"
+               class="skill-icon mx-2">
+          <img src="{{ url_for('static', filename='images/icons/python.png') }}"
+               alt="python"
+               class="skill-icon mx-2">
+          <img src="{{ url_for('static', filename='images/icons/flask.png') }}"
+               alt="flask"
+               class="skill-icon mx-2">
+          <img src="{{ url_for('static', filename='images/icons/django.png') }}"
+               alt="django"
+               class="skill-icon mx-2">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PROJECTS SECTION -->
+  <section class="project-section" id="projects">
+    <div class="px-4 text-center py-5">
+      <h3 class="display-5 my-5 fw-bold project-title">Projects</h3>
+      <div class="projects">
+        <div class="project-div">
+          <a href="https://ferjovel06.github.io/Challenge-Oracle-Decoder/"
+             target="_blank">
+            <img src="{{ url_for('static', filename='images/proyectos/encriptacraft.png') }}"
+                 alt="Encriptacraft"
+                 class="img-fluid px-1">
+          </a>
+        </div>
+        <div class="project-div">
+          <a href="#">
+            <img src="" alt="">
+          </a>
+        </div>
+        <div class="project-div">
+          <a href="#">
+            <img src="" alt="">
+          </a>
+        </div>
+        <div class="project-div">
+          <a href="#">
+            <img src="" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section container-fluid">
+    <div class="px-4 pt-5 mt-5 text-center">
+      <h3 class="display-5 my-5 fw-bold contact-title">
+        Contact <span>Me</span>
+      </h3>
+    </div>
+    <div class="form px-4 py-3 mb-5">
+      <form>
+        <div class="row">
+          <div class="col p-2">
+            <label for="name" class="my-1">Full Name:</label>
+            <input type="text" class="form-control" name="name">
+          </div>
+          <div class="col p-2">
+            <label for="email" class="my-1">Email Address:</label>
+            <input type="text" class="form-control" name="email">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col p-2">
+            <label for="phone" class="my-1">Phone Number:</label>
+            <input type="text" class="form-control" name="phone">
+          </div>
+          <div class="col p-2">
+            <label for="subject" class="my-1">Subject:</label>
+            <input type="text" class="form-control" name="subject">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+        </div>
+        <div class="d-flex flex-row-reverse">
+          <a href="#" class="button button-secondary">Submit</a>
+        </div>
+      </form>
+    </div>
+  </section>
+{% endblock content %}

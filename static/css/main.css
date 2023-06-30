@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+:root {
+    --source-sans-pro: 'Source Sans Pro', sans-serif;
+    --white: #fff;
+    --white-pearl: #D9D9D9;
+    --gray: #3D4950;
+    --black: #000;
+    --black-background: #1C2124;
+    --black-navbar: #232526;
+    --turquoise: #2EBBCF;
+}
+
+*, .navbar, 
+.home-hero, button, 
+.about-section, 
+.project-section, 
+.contact-section, 
+.form,
+.footer {
+    font-family: var(--source-sans-pro);
+}
+
+body {
+    background: var(--black-background);
+    color: var(--white);
+}
+
+/* NAVBAR STYLES */
+.navbar {
+    background: var(--black-navbar);
+    color: var(--white);
+}
+
+.logo-min {
+    width: 4.9rem;
+    height: 2.9rem;
+}
+
+.logo-min:hover {
+    cursor: pointer;
+}
+
+.nav-link {
+    color: var(--white-pearl);
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: var(--turquoise);
+}
+
+/* HERO STYLES */
+.home-hero {
+    height: 56rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.hero {
+    padding: 6em 0;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    color: var(--white);
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.hero-title span {
+    color: var(--turquoise);
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background: var(--turquoise);
+    font-weight: bold;
+    color: var(--white);
+    padding: 1em;
+    line-height: 1;
+    border-radius: 0.5em;
+    position: relative;
+    min-width: 30%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    box-shadow: 4px 4px 0px 1px rgba(26, 119, 132, 0.60);
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: var(--white);
+    color: var(--turquoise);
+    box-shadow: 4px 4px 0px 1px rgba(200, 214, 216, 0.6);
+}
+
+.button:active {
+    box-shadow: none;
+    translate: 2px 2px;
+    background-color: var(--white);
+    border: none;
+}
+
+aside {
+    width: 110px;
+    height: 150px;
+    background: rgba(68.04, 95.91, 112.62, 0.40);
+    box-shadow: 0px 0px 0.5px 1.5px rgba(177.73, 192.52, 230.56, 0.40);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: fixed;
+    top: 40%;
+}
+
+.sidebar-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 15px 0;
+}
+
+/* ABOUT STYLE */
+.about-title {
+    font-weight: 600;
+}
+
+.about-title span, .contact-title span {
+    color: var(--turquoise);
+}
+
+.button-secondary {
+    min-width: 25%;
+    font-size: 1.2rem;
+}
+
+/* PROJECTS STYLE */
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-div {
+    height: 18rem;
+    width: 40%;
+    background-color: rgba(159, 193, 214, 0.25);
+    margin-bottom: 2em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-div:hover {
+    transform: scale(1.05);
+}
+
+.project-div:first-child, .project-div:nth-child(3) {
+    margin-right: 1em;
+}
+
+.project-div:nth-child(2), .project-div:nth-child(4) {
+    margin-left: 1em;
+}
+
+.project-div:first-child {
+    background-image: url("../images/proyectos/background_encriptacraft.png");
+}
+
+/* CONTACT STYLE */
+.form {
+    width: 940px;
+    margin: 0 auto;
+    background-color: var(--gray);
+    box-shadow: 0px 0px 0px 2px rgba(61, 73, 80, 0.60);
+}
+
+.form-control {
+    background-color: var(--black-background);
+    border: none;
+    box-shadow: 0px 0px 0px 2px rgba(25, 34, 31, 0.25);
+}
+
+.form-control:focus {
+    background-color: var(--black-background);
+}
+
+/* FOOTER STYLE */
+footer {
+    background-color: var(--gray);
+    color: var(--white);
+    width: 100%;
+    text-align: center;
+}
+
+.footer > * {
+    margin: auto 2rem;
+}
+
+.footer-top-left {
+    font-weight: 400;
+    
+}
+
+.footer-p {
+    position: relative;
+    right: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.elementos {
+    display: inline;
+}
+
+.footer-icon {
+    width: 30px;
+}
+
+footer a {
+    text-decoration: none;
+}
