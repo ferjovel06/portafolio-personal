@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
   <!-- HERO SECTION -->
-  <section class="home-hero" id="home">
+  <section class="home-hero reveal active" id="home">
     <div class="px-4 py-5 mt-5 text-center">
       <h1 class="display-5 my-5 fw-bold hero-title">
         Hey, I'm &lt;<span>Fernanda Jovel</span>/&gt;
@@ -16,7 +16,7 @@
     <aside class="sidebar">
       <div class="sidebar-icons">
         <a href="https://github.com/ferjovel06" class="icon" target="_blank">
-          <img src="{{ url_for('static', filename='images/github_icon.png') }}"
+          <img src="{{ url_for('static', filename='images/github_icon.svg') }}"
                alt="Github"
                class="github-icon img-fluid p-1 my-2">
         </a>
@@ -34,7 +34,7 @@
     </aside>
   </section>
   <!-- ABOUT SECTION -->
-  <section id="about" class="about-section">
+  <section id="about" class="about-section reveal">
     <div class="px-4 py-5 my-5 text-center">
       <h3 class="display-5 my-5 fw-bold about-title">
         About <span>Me</span>
@@ -81,7 +81,7 @@
     </div>
   </section>
   <!-- PROJECTS SECTION -->
-  <section class="project-section" id="projects">
+  <section class="project-section reveal" id="projects">
     <div class="px-4 text-center py-5">
       <h3 class="display-5 my-5 fw-bold project-title">Projects</h3>
       <div class="projects">
@@ -112,7 +112,7 @@
     </div>
   </section>
   <!-- CONTACT SECTION -->
-  <section id="contact" class="contact-section container-fluid">
+  <section id="contact" class="contact-section container-fluid reveal">
     <div class="px-4 pt-5 mt-5 text-center">
       <h3 class="display-5 my-5 fw-bold contact-title">
         Contact <span>Me</span>

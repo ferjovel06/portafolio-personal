@@ -25,10 +25,59 @@
       </head>
       <body>
             {% include 'includes/navbar.html' %}
-            <div class="background">
-                  {% block content %}
-                  {% endblock content %}
-            </div>
+            <div id="tsparticles"></div>
+            <!-- https://www.jsdelivr.com/package/npm/tsparticles-slim -->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.12.0/tsparticles.slim.bundle.min.js"></script> -->
+            <!-- https://www.jsdelivr.com/package/npm/tsparticles -->
+            <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.6/tsparticles.bundle.min.js"></script>
+            <script type="text/javascript">
+                  const options = {
+                        fullScreen: {
+                              enable: true,
+                              zIndex: -1,
+                        },
+                        interactivity: {
+                              events: {
+                                    onClick: {
+                                          enable: true,
+                                          mode: "push",
+                                    },
+                                    onHover: {
+                                          enable: true,
+                                          mode: "repulse",
+                                    },
+                              },
+                              nodes: {
+                                    push: {
+                                          quantity: 5,
+                                    },
+                                    repulse: {
+                                          distance: 200,
+                                    },
+                              },
+                        },
+                        particles: {
+                              links: {
+                                    enable: true,
+                                    opacity: 0.7,
+                                    distance: 200,
+                              },
+                              move: {
+                                    enable: true,
+                                    speed: { min: 1, max: 3 }
+                              },
+                              opacity: {
+                                    value: { min: 0.3, max: 0.7 }
+                              },
+                              size: {
+                                    value: {min:1, max: 3},
+                              },
+                        }
+                  };
+                  tsParticles.load("tsparticles", options);
+            </script>
+            {% block content %}
+            {% endblock content %}
             {% include 'includes/footer.html' %}
       </body>
 </html>
